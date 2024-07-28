@@ -36,7 +36,9 @@ def getWin(player,computer):
         if computer == "Paper":
             return "Scissors Cuts Paper, You Win!!!"
         else :
-            return "Rock Smashes Scissors, You Lose!!!"
+            return "Rock Smashes Scissors, You Lose!!!"        
+    else :
+        return "You Chose Wrong, Failure"
     
 choices = getchoices()
 results = getWin(choices["player"],choices["computer"])
